@@ -5,6 +5,7 @@ import {
   Montserrat_400Regular, 
   Montserrat_700Bold,
 } from '@expo-google-fonts/montserrat';
+import AppLoading from 'expo-app-loading';
 
 import Cesta from './src/telas/Cesta';
 import mock from './src/mocks/cesta';
@@ -16,7 +17,7 @@ export default function App() {
   });
 
   if (!fonteCarregada) {
-    return <View />
+    return <AppLoading />
   }
 
   return (
